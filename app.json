@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ContactShareApk",
-    "slug": "ContactShareApk",
+    "name": "react-native-share-contact",
+    "slug": "react-native-share-contact",
     "platforms": [
       "ios",
       "android",

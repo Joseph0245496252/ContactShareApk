@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native'
 import{Feather} from '@expo/vector-icons'
+import { red } from 'color-name';
 
 
 export default class RegisterScreen extends Component {
@@ -15,32 +16,32 @@ export default class RegisterScreen extends Component {
                 <View style={styles.mainContent}>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> Full Name</Text>
-                        <TextInput placeholder="Boureima TAPILY" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="Joseph Asante" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> Email</Text>
-                        <TextInput placeholder="(+233) 0572718508" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="joseph@example.com"  placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> Phone Number</Text>
-                        <TextInput placeholder="Director of Marketing" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="(+233) 245496252" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> Role</Text>
-                        <TextInput placeholder="contact@codetraingh.com" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="contact@ampersant.com" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> Twitter</Text>
-                        <TextInput placeholder="@boureima" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="@JosephReppy" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
                     <View style={styles.authContainer}>
                         <Text style={styles.authLabel}> LinkedIn</Text>
-                        <TextInput placeholder="/Boureima" placeholderTextColor="#aaaaaa"
+                        <TextInput placeholder="/Joseph" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
 
@@ -57,16 +58,19 @@ export default class RegisterScreen extends Component {
 
 const styles = StyleSheet.create({
     container: {
-
+        marginBottom: 80
     },
     mainContent: {
-        marginHorizontal: 20
+        marginHorizontal: 20,
+        
     },
     image: {
-        marginBottom: 50,
-        height: 120,
+        color: "red",
+        height: 130,
+        
         justifyContent:"center",
         alignItems:"center"
+        
     },
     authContainer: {
         flexDirection: "row",
@@ -83,7 +87,7 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     authLabel: {
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: "bold",
         color: "gray"
     },
@@ -91,9 +95,9 @@ const styles = StyleSheet.create({
         backgroundColor: "red",
         justifyContent: "center",
         alignItems: "center",
-        height: 70,
+        height: 50,
         borderRadius: 5,
-        marginTop: 50
+        marginTop: 20
     },
     ButtonText: {
         color: "white",

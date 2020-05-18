@@ -7,7 +7,7 @@ export default class GetInTouchScreen extends Component {
     const {navigation} = this.props
     return (
       <View style={styles.conatiner}>
-           <Image source={require('../../assets/f3.jpg')} style={styles.image} />
+           <Image source={require('../../assets/screen3.jpg')} style={styles.image} />
           <View style={styles.textContainer}>
                 <Text style={styles.text1} >GET IN TOUCH WITH THE PEOPLE OF COETRAIN</Text>
                 <Text style={styles.text2}>Sign or Register with our Codetrain email</Text>
@@ -31,6 +31,8 @@ const styles = StyleSheet.create({
  conatiner:{},
  image:{
      marginBottom:50,
+     width: 470,
+     height: 200
  },
  text1:{
      fontWeight:"bold",

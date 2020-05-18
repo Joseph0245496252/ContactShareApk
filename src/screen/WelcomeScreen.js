@@ -27,12 +27,12 @@ export default class WelcomeScreen extends Component {
 }
  const styles = StyleSheet.create({
      conatiner:{
-        //  marginVertical: -10,
+      
          alignItems: "center",
-        backgroundColor: "#bbc2ba"
+        backgroundColor: "#ffdd"
      },
      imageContainer:{
-            marginTop: 110
+            marginTop: 90
      },
      image:{
          width: 200,
@@ -40,7 +40,7 @@ export default class WelcomeScreen extends Component {
         
      },
      contact:{
-         marginTop: 160,
+         marginTop: 100,
      },
      contactText:{
          fontSize: 20,
@@ -49,13 +49,17 @@ export default class WelcomeScreen extends Component {
      getstart:{
             marginTop: 200,
             marginBottom: 100,
+           
             
      },
      getstartText:{
          fontSize: 20,
          borderBottomWidth: 1,
          borderBottomColor: "red",
-         marginVertical: -70
+         
+
+        
+       
          
      },
  })

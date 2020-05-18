@@ -41,18 +41,18 @@ const styles = StyleSheet.create({
            
         },
         mainContent:{
-            marginHorizontal:20
+            marginHorizontal: 20
         },
         image:{
-            marginBottom:50,
-            height:250
+            marginBottom: 50,
+            height: 250
         },
         authContainer:{
             flexDirection:"row",
             justifyContent:"space-between",
             borderBottomWidth:0.3,
             borderBottomColor:"#aaaaaa",
-            paddingBottom:20,
+            paddingBottom:50,
             marginTop:10
         },
         authPwdContainer:{

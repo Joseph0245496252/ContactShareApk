@@ -18,7 +18,7 @@ export default class GetInTouchScreen extends Component {
               </TouchableOpacity>
                 
                 <TouchableOpacity  onPress={()=>{navigation.navigate('Login')}}>
-                    <Text style={styles.login}>LOGIN</Text>
+                    <Text style={styles.login}>SIGN IN</Text>
               </TouchableOpacity>
                 
           </View>

@@ -17,7 +17,7 @@ export default function App() {
             options={{
               headerTitle:"Sign In",
               headerTitleAlign:"center",
-              headerStyle:{backgroundColor:"red"},
+              headerStyle:{backgroundColor:"red", height: 120},
               headerTintColor:"white"
             }}
         />
@@ -25,8 +25,9 @@ export default function App() {
                 options={{
                 headerTitle:"Register",
                 headerTitleAlign:"center",
-                headerStyle:{backgroundColor:"red"},
-                headerTintColor:"white"
+                headerStyle:{backgroundColor:"red", height: 120},
+                headerTintColor:"white",
+                
               }}
         />
         <Stack.Screen name="GetInTouch" component={GetInTouchScreen}

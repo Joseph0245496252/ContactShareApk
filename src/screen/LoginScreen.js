@@ -14,7 +14,7 @@ export default class LoginScreen extends Component {
                 </View>
                 <View style={styles.passwordContainer}>
                     <Text style={styles.inputLabel}>Password</Text>
-                    <TextInput placeholder="Password" placeholderTextColor="#aaaaaa" style={styles.input}
+                    <TextInput placeholder="********" placeholderTextColor="#aaaaaa" style={styles.input}
                         secureTextEntry={true} textAlign="right" />
                 </View>
 
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         },
         profile:{
             width: 470,
-            height: 400
+            height: 300
         },
         inputContainer:{
             flexDirection: "row",

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, TextInput, TouchableOpacity, ScrollView } from 'react-native'
 import{Feather} from '@expo/vector-icons'
+import { blue } from 'color-name';
 // import { red } from 'color-name';
 
 
@@ -58,7 +59,8 @@ export default class RegisterScreen extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 80
+     
+        backgroundColor:  "#ffdd",
     },
     mainContent: {
         marginHorizontal: 20
@@ -67,7 +69,7 @@ const styles = StyleSheet.create({
     profile: {
         justifyContent:"center",
         alignItems:"center",
-        height: 130
+        height: 230
         
     },
     inputContainer: {
@@ -94,7 +96,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         height: 50,
         borderRadius: 5,
-        marginTop: 20
+        marginTop: 80
     },
     ButtonText: {
         color: "white",

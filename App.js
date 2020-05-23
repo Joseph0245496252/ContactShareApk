@@ -22,7 +22,7 @@ export default function App() {
             }}
         />
         <Stack.Screen name="Register" component={RegisterScreen} 
-              options={{
+                options={{
                 headerTitle:"Register",
                 headerTitleAlign:"center",
                 headerStyle:{backgroundColor:"red"},
@@ -31,13 +31,14 @@ export default function App() {
         />
         <Stack.Screen name="GetInTouch" component={GetInTouchScreen}
             options={{
-              headerTitle:null,
-              headerStyle:{height:60}
+              headerTitle: null,
+              headerStyle:{height:0}
             }}
+           
         />
         <Stack.Screen name="Welcome" component={WelcomeScreen}
              options={{
-              headerTitle:null,
+              headerTitle: null,
               headerStyle:{height:0}
             }}
         />
@@ -48,7 +49,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
+    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

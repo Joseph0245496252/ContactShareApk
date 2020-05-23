@@ -7,9 +7,9 @@ export default class GetInTouchScreen extends Component {
     const {navigation} = this.props
     return (
       <View style={styles.conatiner}>
-           <Image source={require('../../assets/screen3.jpg')} style={styles.image} />
+           <Image source={require('../../assets/screen2.jpg')} style={styles.image} />
           <View style={styles.textContainer}>
-                <Text style={styles.text1} >GET IN TOUCH WITH THE PEOPLE OF COETRAIN</Text>
+                <Text style={styles.text1} >GET IN TOUCH WITH THE PEOPLE OF AMPERSAND</Text>
                 <Text style={styles.text2}>Sign or Register with our Codetrain email</Text>
           </View>
           <View style={styles.access}>
@@ -28,17 +28,21 @@ export default class GetInTouchScreen extends Component {
 }
 
 const styles = StyleSheet.create({
- conatiner:{},
+ conatiner:{
+     backgroundColor:  "#ffdd",
+     height: 840
+ },
  image:{
-     marginBottom:50,
+     marginBottom:100,
      width: 470,
-     height: 200
+     height: 420
  },
  text1:{
      fontWeight:"bold",
      fontSize:25,
      marginBottom:10,
-     marginLeft:45
+     marginLeft:45,
+     alignItems: "center"
  },
  text2:{
      color:"#aaaaaa"
@@ -48,7 +52,7 @@ const styles = StyleSheet.create({
      justifyContent:"center"
  },
  access:{
-     marginTop:100,
+     marginTop:150,
      flexDirection:"row",
      justifyContent:"space-around"
  },

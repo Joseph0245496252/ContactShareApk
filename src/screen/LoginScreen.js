@@ -38,14 +38,14 @@ export default class LoginScreen extends Component {
 
 const styles = StyleSheet.create({
         container:{
-           
+           backgroundColor: "#ffdd",
         },
         mainContent:{
             marginHorizontal: 20
         },
         profile:{
             width: 470,
-            height: 200
+            height: 400
         },
         inputContainer:{
             flexDirection: "row",
@@ -86,14 +86,14 @@ const styles = StyleSheet.create({
         },
         forgotText:{
             marginRight: 10,
-            fontSize: 15,
+            fontSize: 15
             
         },
         reset:{
             borderBottomColor: "red",
             borderBottomWidth: 1,
             paddingBottom: 5,
-            fontSize: 15,
+            fontSize: 15
             
         }
 })

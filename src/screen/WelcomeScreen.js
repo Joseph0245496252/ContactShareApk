@@ -29,7 +29,9 @@ export default class WelcomeScreen extends Component {
      conatiner:{
       
          alignItems: "center",
-        backgroundColor: "#ffdd"
+        backgroundColor: "#ffdd",
+        
+
      },
      imageContainer:{
             marginTop: 90
@@ -40,15 +42,15 @@ export default class WelcomeScreen extends Component {
         
      },
      contact:{
-         marginTop: 100,
+         marginTop: 200,
      },
      contactText:{
          fontSize: 20,
         
      },
      getstart:{
-            marginTop: 200,
-            marginBottom: 100,
+            marginTop: 350,
+            marginBottom: 200,
            
             
      },

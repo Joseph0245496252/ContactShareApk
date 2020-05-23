@@ -1,46 +1,46 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native'
+import { Text, View, StyleSheet, TextInput, TouchableOpacity, ScrollView } from 'react-native'
 import{Feather} from '@expo/vector-icons'
-import { red } from 'color-name';
+// import { red } from 'color-name';
 
 
 export default class RegisterScreen extends Component {
     render() {
         return (
             <ScrollView style={styles.container}>
-                <TouchableOpacity style={styles.image}>
-                     <Feather name="user" size={50}  />
-                     <Text>ADD PROFILE PHOTO</Text>
+                <TouchableOpacity style={styles.profile}>
+                     <Feather name="user"size={50}  />
+                     <Text>ADD PROFILE PICTURE</Text>
                 </TouchableOpacity>
                
                 <View style={styles.mainContent}>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> Full Name</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}> Full Name</Text>
                         <TextInput placeholder="Joseph Asante" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> Email</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}> Email</Text>
                         <TextInput placeholder="joseph@example.com"  placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> Phone Number</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}> Phone Number</Text>
                         <TextInput placeholder="(+233) 245496252" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> Role</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}>Role</Text>
                         <TextInput placeholder="contact@ampersant.com" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> Twitter</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}> Twitter</Text>
                         <TextInput placeholder="@JosephReppy" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
-                    <View style={styles.authContainer}>
-                        <Text style={styles.authLabel}> LinkedIn</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}> LinkedIn</Text>
                         <TextInput placeholder="/Joseph" placeholderTextColor="#aaaaaa"
                             style={styles.input} textAlign="right" />
                     </View>
@@ -61,32 +61,29 @@ const styles = StyleSheet.create({
         marginBottom: 80
     },
     mainContent: {
-        marginHorizontal: 20,
+        marginHorizontal: 20
         
     },
-    image: {
-        color: "red",
-        height: 130,
-        
+    profile: {
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        height: 130
         
     },
-    authContainer: {
+    inputContainer: {
         flexDirection: "row",
-        justifyContent: "space-between",
-        borderBottomWidth: 0.3,
         borderBottomColor: "#aaaaaa",
+        justifyContent: "space-between",
+        borderBottomWidth: 1,
         paddingBottom: 20,
         marginTop: 10
     },
     authPwdContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        paddingBottom: 5,
         marginTop: 10
     },
-    authLabel: {
+    inputLabel: {
         fontSize: 15,
         fontWeight: "bold",
         color: "gray"

@@ -5,15 +5,15 @@ export default class LoginScreen extends Component {
     render() {
         return (
             <ScrollView style={styles.container}>
-                    <Image source={require('../../assets/f1.jpg')} style={styles.image} />
+                    <Image source={require('../../assets/screen3.jpg')} style={styles.profile} />
                     <View style={styles.mainContent}>
-                <View style={styles.authContainer}>
-                    <Text style={styles.authLabel}> Email</Text>
+                <View style={styles.inputContainer}>
+                    <Text style={styles.inputLabel}> Email</Text>
                     <TextInput placeholder="contact@codetraingh.com" placeholderTextColor="#aaaaaa"
                      style={styles.input} textAlign="right" />
                 </View>
-                <View style={styles.authPwdContainer}>
-                    <Text style={styles.authLabel}>Password</Text>
+                <View style={styles.passwordContainer}>
+                    <Text style={styles.inputLabel}>Password</Text>
                     <TextInput placeholder="Password" placeholderTextColor="#aaaaaa" style={styles.input}
                         secureTextEntry={true} textAlign="right" />
                 </View>
@@ -43,54 +43,57 @@ const styles = StyleSheet.create({
         mainContent:{
             marginHorizontal: 20
         },
-        image:{
-            marginBottom: 50,
-            height: 250
+        profile:{
+            width: 470,
+            height: 200
         },
-        authContainer:{
-            flexDirection:"row",
-            justifyContent:"space-between",
-            borderBottomWidth:0.3,
-            borderBottomColor:"#aaaaaa",
-            paddingBottom:50,
-            marginTop:10
+        inputContainer:{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            borderBottomWidth: 0.5,
+            borderBottomColor: "#aaaaaa",
+            paddingBottom: 20,
+            marginTop: 40
         },
-        authPwdContainer:{
-            flexDirection:"row",
-            justifyContent:"space-between",
-            paddingBottom:5,
-            marginTop:10
+        passwordContainer:{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            paddingBottom: 5,
+            marginTop: 10
         },
-        authLabel:{
-            fontSize:18,
-            fontWeight:"bold",
-            color:"gray"
+        inputLabel:{
+            fontSize: 15,
+            fontWeight: "bold",
+            color: "gray"
         },
         ButtonContainer:{
-            backgroundColor:"red",
-            justifyContent:"center",
-            alignItems:"center",
-            height:70,
-            borderRadius:5,
-            marginTop:50
+            backgroundColor: "red",
+            justifyContent: "center",
+            alignItems: "center",
+            height: 50,
+            borderRadius: 5,
+            marginTop: 50
         },
         ButtonText:{
-            color:"white",
-            fontWeight:"bold",
-            fontSize:20
+            color: "white",
+            fontWeight: "bold",
+            fontSize: 20
         },
         forgotContainer:{
-            flexDirection:"row",
-            marginTop:40
+            flexDirection: "row",
+            marginTop: 40,
+            
         },
         forgotText:{
-            marginRight:10,
-            fontSize:15
+            marginRight: 10,
+            fontSize: 15,
+            
         },
         reset:{
-            borderBottomColor:"red",
-            borderBottomWidth:1,
-            paddingBottom:5,
-            fontSize:15
+            borderBottomColor: "red",
+            borderBottomWidth: 1,
+            paddingBottom: 5,
+            fontSize: 15,
+            
         }
 })
